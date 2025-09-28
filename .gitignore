@@ -1,0 +1,78 @@
+# .gitignore for .NET 9 / ASP.NET Core MVC
+
+# Build outputs
+[Bb]in/
+[Oo]bj/
+out/
+artifacts/
+publish/
+
+# Visual Studio / editors
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+*.iml
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+project.assets.json
+
+# dotnet tool / coverage
+*.dotCover
+*.ncrunch*
+*.coverage
+*.coveragexml
+
+# ASP.NET Core / local dev secrets
+appsettings.Development.json
+appsettings.*.Local.json
+secrets.json
+local.settings.json
+
+# Certificates / keys
+*.pfx
+*.p12
+*.jks
+*.key
+*.pem
+
+# Logs / DBs / caches / temp
+*.log
+*.tlog
+*.sqlite
+*.db
+*.mdf
+*.ldf
+*.backup
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Node / frontend (only if you have frontend code)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+pnpm-lock.yaml
+
+# Environment files
+.env
+.env.*
+.env.local
+
+# OS files
+Thumbs.db
+.DS_Store
