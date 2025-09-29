@@ -1,6 +1,9 @@
+
 @{
+    ViewBag.Title ="Toplanti Başvuru";
     Layout = "_Layout2";
 }
-<h1 class="h4">Merhaba</h1>
+<h1 class="h4">@ViewData["Selamlama"], @ViewData["UserName"]</h1>
 <p>Toplanti katilim durumunuzu bildiriniz.</p>
 <a class="btn btn-sm btn-outline-primary" asp-controller="Meeting" asp-action="Apply">Başvuru yap</a>
+
