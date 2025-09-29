@@ -27,6 +27,7 @@ packages/
 project.lock.json
 project.fragment.lock.json
 project.assets.json
+wwwroot/lib/
 
 # dotnet tool / coverage
 *.dotCover
