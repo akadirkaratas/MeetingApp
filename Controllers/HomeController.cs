@@ -1,5 +1,6 @@
 
 
+using MeetingApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MeetingApp.Controllers
@@ -16,7 +17,15 @@ namespace MeetingApp.Controllers
             ViewData["Selamlama"] = saat > 12 ? "İyi Günler" : "Günaydin";
             ViewData["UserName"] = "Kadir";
 
-            return View();
+            var meetingInfo = new MeetingInfo()
+            {
+                Id = 1,
+                Location = "Kadiköy, İstanbul ",
+                Date = new DateTime(2025, 09, 30, 18, 30, 0),
+                NumberOfPeople = 100
+            };
+
+            return View(meetingInfo);
 
         }
     }
