@@ -4,7 +4,8 @@
     
 }
 <h1 class="h4 text-center">Toplanti Katilim Formu</h1>
-<form method="post" action="/Meeting/Apply">
+<form method="post" action="/Meeting/Apply" novalidate>
+    <div asp-validation-summary="All"></div>
     <div class="mb-3">
         <label asp-for="Name" class="form-label">Ad</label>
         <input asp-for="Name" class="form-control">
@@ -20,6 +21,7 @@
     <div class="mb-3">
         <label asp-for="WillAttend" class="form-label">Katilim Durumu</label>
         <select asp-for="WillAttend" class="form-select">
+            <option value="">Seciniz</option>
             <option value="true">Evet, katiliyorum</option>
             <option value="false">Hayir, katilmiyorum</option>
         </select>
