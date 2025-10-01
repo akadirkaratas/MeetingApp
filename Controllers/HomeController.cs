@@ -15,7 +15,7 @@ namespace MeetingApp.Controllers
             //ViewBag.UserName = "Kadir";
             
             ViewData["Selamlama"] = saat > 12 ? "İyi Günler" : "Günaydin";
-            ViewData["UserName"] = "Kadir";
+            //ViewData["UserName"] = "Kadir";
 
             var meetingInfo = new MeetingInfo()
             {
